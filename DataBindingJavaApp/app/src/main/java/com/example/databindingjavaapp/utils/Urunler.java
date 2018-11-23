@@ -18,7 +18,6 @@ public class Urunler {
         }
     }
 
-
     public static final Urun KIRMIZI_LAMBA=new Urun("Kırmızı Lamba","Harika bir lamba",
             R.drawable.red_lamp,25.99,22.99,142,4.5f,123456);
 

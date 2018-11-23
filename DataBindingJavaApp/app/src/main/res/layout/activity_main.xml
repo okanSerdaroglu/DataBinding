@@ -3,35 +3,15 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" >
 
-    <data>
 
-        <variable
-            name="ogrenci"
-            type="com.example.databindingjavaapp.Ogrenci"/>
-
-    </data>
-
-<LinearLayout
+<FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:id="@+id/container"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@{String.valueOf(ogrenci.no)}"
-        android:textSize="30dp"
-        android:id="@+id/ogrNO"/>
-
-    <TextView
-        android:id="@+id/tvIsim"
-        android:layout_width="wrap_content"
-        android:textSize="30dp"
-        android:text = "@{ogrenci.isim}"
-        android:layout_height="wrap_content"/>
-
-</LinearLayout>
+</FrameLayout>
 
 </layout>

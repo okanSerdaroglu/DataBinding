@@ -13,13 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mainBinding = DataBindingUtil.setContentView(this,R.layout.activity_main);
 
-        Ogrenci ogr1 = new Ogrenci(1,"okan");
-        Ogrenci ogr2 = new Ogrenci(2, "Büşra");
 
-        /*mainBinding.ogrNO.setText(String.valueOf(ogr1.getNo()));
-        mainBinding.tvIsim.setText(ogr1.getIsim());*/
-
-        mainBinding.setOgrenci(ogr2);
 
     }
 }

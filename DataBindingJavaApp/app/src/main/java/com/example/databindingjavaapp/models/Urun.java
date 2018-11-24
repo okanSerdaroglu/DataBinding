@@ -16,6 +16,14 @@ public class Urun implements Parcelable {
     private int seriNumarasi;
     private String baslik;
 
+    public boolean kampanyaVarMi(){
+        if (kampanyaliFiyat > 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 
     public Urun(String baslik, String aciklama, int urunResim, double fiyat, double kampanyaliFiyat, int degerlendirmeSayisi, float degerlendirmeNotu, int seriNumarasi) {
         this.baslik = baslik;

@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import com.example.databindingjavaapp.databinding.ActivityMainBinding;
+import com.example.databindingjavaapp.fragments.MainFragment;
 import com.example.databindingjavaapp.fragments.UrunDetayFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,10 +23,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init (){
-        UrunDetayFragment urunDetayFragment = new UrunDetayFragment();
+
+        MainFragment mainFragment = new MainFragment();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.container,mainFragment,"mainFragment");
+        fragmentTransaction.commit();
+
+
+        /*UrunDetayFragment urunDetayFragment = new UrunDetayFragment();
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.container,urunDetayFragment,"urunDetayFragment");
-        fragmentTransaction.commit();
+        fragmentTransaction.commit();*/
     }
 
 

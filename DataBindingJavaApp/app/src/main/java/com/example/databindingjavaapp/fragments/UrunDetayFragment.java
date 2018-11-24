@@ -1,13 +1,9 @@
 package com.example.databindingjavaapp.fragments;
-
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.example.databindingjavaapp.databinding.FragmentUrunDetayBinding;
 import com.example.databindingjavaapp.utils.Urunler;
 
@@ -23,6 +19,7 @@ public class UrunDetayFragment extends Fragment {
 
         Urunler urunler = new Urunler();
         fragmentUrunDetayBinding.setUrun(urunler.tumUrunlerDizi[3]);
+        fragmentUrunDetayBinding.setMiktar(9);
 
         return fragmentUrunDetayBinding.getRoot();
 

@@ -10,6 +10,10 @@
             name="urun"
             type="com.example.databindingjavaapp.models.Urun">
         </variable>
+        <variable
+            name="miktar"
+            type="int">
+        </variable>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -113,7 +117,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:text="Miktar : 1"
+            android:text="@{urun.mikrariAlVeStringeCevir(miktar)}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewIndirimliFiyat" />
 

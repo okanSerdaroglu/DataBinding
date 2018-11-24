@@ -3,8 +3,6 @@ package com.example.databindingjavaapp.models;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import java.util.HashMap;
-
 public class Urun implements Parcelable {
 
     private String aciklama;
@@ -22,6 +20,12 @@ public class Urun implements Parcelable {
         } else {
             return false;
         }
+    }
+
+    public String mikrariAlVeStringeCevir (int miktar) {
+
+        return "miktar : " +  String.valueOf(miktar);
+
     }
 
 

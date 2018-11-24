@@ -10,8 +10,9 @@ import com.example.databindingjavaapp.databinding.FragmentMainBinding;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-public class MainFragment extends Fragment {
+public class MainFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
 
 
     FragmentMainBinding fragmentMainBinding;
@@ -22,7 +23,16 @@ public class MainFragment extends Fragment {
 
         fragmentMainBinding = FragmentMainBinding.inflate(inflater);
 
+        fragmentMainBinding.swipeRefreshLayout.setOnRefreshListener(this);
+
         return fragmentMainBinding.getRoot();
+
+    }
+
+    @Override
+    public void onRefresh() {
+
+
 
     }
 }
